@@ -3,9 +3,10 @@ var katzDeli = [];
 
 
 function currentLine(line) {
-  if (line.length === 0) {
+  if (line.length) {
     return "The line is currently empty.";
-  } else {
+  }
+   else {
     let newLine = ["The line is currently:"];
     for (var i = 0; i<line.length; i++) {
       newLine.shift(`${[i+1]}. ${line[i]}`);
