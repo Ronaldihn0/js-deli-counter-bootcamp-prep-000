@@ -1,4 +1,5 @@
 
+var katzDeli = [];
 
 
 function currentLine(line) {
@@ -11,4 +12,22 @@ function currentLine(line) {
     }
     return newLine
   }
+}
+
+function currentLine(katzDeliLine) {
+  var x;
+
+  if (katzDeliLine.length == 0 || katzDeliLine == null) {
+    return("The line is currently empty.");
+  }
+  else {
+    var text = ["The line is currently:"];
+
+      for (x = 0; x < katzDeliLine.length; x++) {
+            text.push(` ${katzDeliLine.indexOf() + 1}.`);
+            text.push(` ${katzDeliLine[x]}`);
+          }
+        }
+  text.join("");
+  return text;
 }
