@@ -9,7 +9,7 @@ function nowServing(Ada) {
   if (Ada.length === 0) {
     return "There is nobody waiting to be served!"
   } else {
-    var name = x[0];
+    var name = Ada[0];
     Ada.splice(0, 1);
     return "Currently serving " + name + ".";
   }
