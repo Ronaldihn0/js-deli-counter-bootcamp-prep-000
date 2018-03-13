@@ -1,11 +1,11 @@
 var katzDeliLine = [];
 
-function TakeANumber(katzDeliLine, name) {
+function takeANumber(katzDeliLine, name) {
   katzDeliLine.push(name)
   return "Welcome, " + name + ". You are number " + katzDeliLine.length + " in line."
 }
 
-function NowServing(Ada) {
+function nowServing(Ada) {
   if (Ada.length === 0) {
     return "There is nobody waiting to be served!"
   } else {
@@ -15,7 +15,7 @@ function NowServing(Ada) {
   }
 }
 
-function CurrentLine(NewLine) {
+function currentLine(NewLine) {
     var line = [];
     if (NewLine.length === 0) {
       return "The line is currently empty."
