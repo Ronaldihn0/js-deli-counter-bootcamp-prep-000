@@ -15,20 +15,17 @@ function currentLine(line) {
   }
 }
 
-function currentLine(katzDeliLine) {
-  var x;
+var katzDeliLine = [];
 
-  if (katzDeliLine.length == 0 || katzDeliLine == null) {
-    return("The line is currently empty.");
-  }
-  else {
-    var text = ["The line is currently:"];
-
-      for (x = 0; x < katzDeliLine.length; x++) {
-            text.push(` ${katzDeliLine.indexOf() + 1}.`);
-            text.push(` ${katzDeliLine[x]}`);
-          }
-        }
-  text.join("");
-  return text;
+function currentLine(x) {
+    var line = []
+    if (x.length === 0) {
+      return "The line is currently empty."
+    } else {
+      for(var i = 0; i < x.length; i++) {
+        line += (i + 1) + ". " + x[i] + ", "
+      }
+      line = line.slice(0, line.length-2)
+      return "The line is currently: " + line
+    }
 }
