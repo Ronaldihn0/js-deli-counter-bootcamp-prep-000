@@ -5,9 +5,9 @@ function takeANumber(katzDeliLine, name) {
   return "Welcome, " + name + ". You are number " + katzDeliLine.length + " in line."
 }
 
-function currentLine(x) {
+function currentLine(NewLine) {
     var line = []
-    if (x.length === 0) {
+    if (NewLine.length === 0) {
       return "The line is currently empty."
     } else {
       for(var i = 0; i < x.length; i++) {
